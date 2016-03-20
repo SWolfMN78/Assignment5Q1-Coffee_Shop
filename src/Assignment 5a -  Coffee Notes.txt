@@ -2,10 +2,10 @@ Flow
 	Display greeting
 		create a class Object to read and create an internal form into an arraylist
 			load information (Coffee.txt)
-				Drink name; Purchase Price; Cost to Make
+                Method: Read information from arraylist
+                    Read information from the and push into the array.
+                        Drink name; Purchase Price; Cost to Make
 		Create a class object to act as the coffee shop for all the work to be handled
-			Method: Read information from arraylist
-				Read information from the and push into 
 			Method: run calculation of total amount
 				Format: Drink: / # Sold: / Expenses: / Revenue: / Profit:
 						Drink          = Drink name from arraylist.

@@ -1,5 +1,4 @@
 package com.Shawn;
-
 import javax.print.DocFlavor;
 import java.io.*;
 import java.util.ArrayList;
@@ -31,7 +30,6 @@ public class oCoffeeShopList {
             }
             bufReader.close();
         }
-
     }
 
 }
