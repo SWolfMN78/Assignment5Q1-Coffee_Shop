@@ -7,20 +7,12 @@ public class Main {
         oCoffeeShop cs = new oCoffeeShop();
 
         cs.shopGreeting(); //display greeting
-        while (cs.qMoreDrinks == true){
+        while (cs.qMoreDrinks == true){//as long as more drinks need entering this will stay true until line 13 = n.
             cs.displayDrinkList(); //display current quantity, drinks, cost and price along with current grand total.
             cs.editDrinkInfo(); //Ask user for which drink they want to enter information
-            cs.askForMoreDrinks();
+            cs.askForMoreDrinks(); //check if the user needs more drinks updated.
         }
-        cs.displayDrinkList();
-
-
-        //Display the total for that item
-        //Re-populate the list with the new information
-        //Ask the user if they have any other drinks
-        //If yes - repeat line 5 of the above
-        //If no - tally infomation and display the new list
+        cs.displayDrinkList(); //display the final read out of information.
         cs.shopExit(); //Diplay thank you - End
-
     }
 }

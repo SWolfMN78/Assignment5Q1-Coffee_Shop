@@ -23,7 +23,7 @@ public class oCoffeeShop {
     boolean qMoreDrinks = true;
     DecimalFormat df = new DecimalFormat("#,###,##0.00");//stackoverflow help
 
-    public void shopGreeting(){
+    public void shopGreeting(){//basic greeting and
         System.out.println("Welcome to the Tweek Drip Coffee Report System.");
         System.out.println("Select your coffee drink from the list to get started");
         try {
