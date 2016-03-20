@@ -22,8 +22,13 @@ Flow
 		Leave main class for presentation level
 		
 	Display list of drink names, cost to make, price to purchase
-		Create
-	Display grand total 
+		Method craeted in oCoffeeShop
+        Display grand total
+            DRINK   Cost    Price   Quanity
+            Drink 1 ;$1.56; $3.50   3
+            Drink 2 ;$1.56; $3.50   6
+
+            Grand Total: $X.XX
 	Ask user for which drink they want to ender information
 	Ask user how many cups of that drink was sold
 	Display the total for that item

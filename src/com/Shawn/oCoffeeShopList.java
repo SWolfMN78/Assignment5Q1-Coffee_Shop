@@ -1,5 +1,4 @@
 package com.Shawn;
-import javax.print.DocFlavor;
 import java.io.*;
 import java.util.ArrayList;
 
@@ -8,12 +7,14 @@ import java.util.ArrayList;
  * This list will handle grabbing the .txt file which holds the drink list & pricing information
  */
 public class oCoffeeShopList {
-    public static void coffeeList() throws IOException{ //put in IOException incase information can't be found/read.
-        ArrayList drinkList = new ArrayList();
+    ArrayList<oDrink> drinkList = new ArrayList<oDrink>();
+
+    public void coffeeList() throws IOException{ //put in IOException incase information can't be found/read.
         oDrink drink; //nothing passed in or set at this time - will declare later
         String drinkName = "";
         double costToCreate = 0;
         double priceToPurchase = 0;
+        int quantity = 0;
 
         try (FileReader reader = new FileReader("Coffee.txt")){
             BufferedReader bufReader = new BufferedReader(reader);
@@ -29,6 +30,23 @@ public class oCoffeeShopList {
                 line = bufReader.readLine();
             }
             bufReader.close();
+        }
+    }
+
+    public boolean doesContainName(String name){
+        for (oDrink drink: drinkList) {//if the name that is passed in matches the one on the list then flag true.
+            if (drink.name.equalsIgnoreCase(name) == true){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public void editQuantity(String name, int quantity){
+        for (oDrink drink: drinkList){
+            if (drink.name.equalsIgnoreCase(name)){
+                drink.quanity = quantity;
+            }
         }
     }
 
