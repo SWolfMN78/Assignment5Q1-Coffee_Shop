@@ -1,0 +1,34 @@
+Flow
+	Display greeting
+		create a class Object to read and create an internal form into an arraylist
+			load information (Coffee.txt)
+				Drink name; Purchase Price; Cost to Make
+		Create a class object to act as the coffee shop for all the work to be handled
+			Method: Read information from arraylist
+				Read information from the and push into 
+			Method: run calculation of total amount
+				Format: Drink: / # Sold: / Expenses: / Revenue: / Profit:
+						Drink          = Drink name from arraylist.
+						Sold           = int informatin entered by user
+						Expenses       = Sold * Cost to Make (on form)
+						Revenue        = Sold * Purchase price
+						Profit         = Expenses - Revenue
+						Grand Total    = Revenue * Total number of all drink
+			Method: Presentation level Coffee Shop List with total amount of sales.
+				
+			Method: Information validation
+			Method: Boolean Check
+				Ask if more drinks - if yes then set = true / else if no then set false
+		Leave main class for presentation level
+		
+	Display list of drink names, cost to make, price to purchase
+		Create
+	Display grand total 
+	Ask user for which drink they want to ender information
+	Ask user how many cups of that drink was sold
+	Display the total for that item
+	Re-populate the list with the new information
+	Ask the user if they have any other drinks
+	If yes - repeat line 5 of the above
+	If no - tally infomation and display the new list
+	Diplay thank you - End
